@@ -27,7 +27,7 @@ function main() {
     process.exit(1);
   }
 
-  const packageJson = JSON.parse();
+  const packageJson = JSON.parse(fileContent);
   const version = packageJson.version;
   const versionParts = version.split('.');
   const major = parseInt(versionParts[0]);
